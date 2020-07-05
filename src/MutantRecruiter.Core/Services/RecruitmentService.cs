@@ -1,6 +1,14 @@
-﻿namespace MutantRecruiter.Core.Services
+﻿using MutantRecruiter.Core.Interfaces;
+using System.Collections.Generic;
+
+namespace MutantRecruiter.Core.Services
 {
-    public class RecruitmentService
+    public class RecruitmentService : IRecruitmentService
     {
+        public bool Recruit(List<string> dna)
+        {
+            return Recruiter
+                .Build().IsMutant(dna.ToArray());
+        }
     }
 }
