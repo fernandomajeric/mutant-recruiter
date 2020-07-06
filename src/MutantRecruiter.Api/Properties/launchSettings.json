@@ -18,8 +18,7 @@
     },
     "MutantRecruiter.Api": {
       "commandName": "Project",
-      "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchBrowser": true,      
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

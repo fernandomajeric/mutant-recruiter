@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using MutantRecruiter.Api.Models;
 using MutantRecruiter.Core.Interfaces;
 using Newtonsoft.Json;
+using System.Threading.Tasks;
 
 namespace MutantRecruiter.Api.Controllers
 {
@@ -20,7 +21,7 @@ namespace MutantRecruiter.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Recruit(RecruitModel model)
+        public async Task<IActionResult> Recruit(RecruitModel model)
         {
             try
             {
@@ -29,7 +30,9 @@ namespace MutantRecruiter.Api.Controllers
                 if (model == null)
                     return BadRequest("model empty");
 
-                var result = this.service.Recruit(model.Dna);
+                var result = await this.service.Recruit(model.Dna);
+
+                this._logger.LogDebug("Is Mutant: {}", result);
 
                 if (!result)
                     return StatusCode(StatusCodes.Status403Forbidden);

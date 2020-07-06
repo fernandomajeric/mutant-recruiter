@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace MutantRecruiter.Core.Interfaces
 {
     public interface IRecruitmentService
     {
-        bool Recruit(List<string> dna);
+        Task<bool> Recruit(List<string> dna);
     }
 }
