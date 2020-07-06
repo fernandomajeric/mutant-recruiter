@@ -1,6 +1,6 @@
 # ML - Reclutamiento de Mutantes para Magneto
 
-Con magneto-api sabrás cuando un humano es mutante si encuentras más de una secuencia de cuatro letras iguales , de forma oblicua, horizontal o vertical, dado un array de string que representan cada fila de una tabla de (NxN) con la secuencia del ADN.
+Con la api de mutant recruiter es posible verificar cuando un humano es mutante si encuentras más de una secuencia de cuatro letras iguales , de forma oblicua, horizontal o vertical, dado un array de string que representan cada fila de una tabla de (NxN) con la secuencia del ADN.
 
 ![enter image description here](https://github.com/fernandomajeric/mutant-recruiter/blob/master/docs/Capture.PNG)
 
