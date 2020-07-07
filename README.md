@@ -8,15 +8,17 @@ Para la solución se realizo una API en Azure: [MutantRecruiterApi](https://muta
 
 ## Ejecución local
 
-Para instalar Docker utilizar la siguiente [guia](https://docs.docker.com/get-docker/).
+### 1 Instalar Docker
 
-### 1. Descargar Proyecto
+* Para instalar Docker utilizar la siguiente [guia](https://docs.docker.com/get-docker/).
+
+### 2. Descargar Proyecto
 
 * Ejectuar el siguiente comando:
 
     `git clone https://github.com/aescobar-icc/magneto-api.git`
 
-### 2. Correr la solución utilizando Docker
+### 3. Correr la solución utilizando Docker
 
 Correr los siguientes commandos en la carpeta raiz (donde se encuentra el archivo .sln):
 
@@ -26,7 +28,7 @@ Correr los siguientes commandos en la carpeta raiz (donde se encuentra el archiv
 
 Debería poder realizar solicitudes a localhost:5106 para la api una vez que se completen estos comandos.
 
-### 3. Probar la api
+### 4. Probar la api
 
 ### mutant
 * Metodo: POST (No idempotente)
