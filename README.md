@@ -6,7 +6,27 @@ Con la api de mutant recruiter es posible verificar cuando un humano es mutante 
 
 Para la solución se realizo una API en Azure: [MutantRecruiterApi](https://mutantrecruiterapi20200706030223.azurewebsites.net)
 
-## Endpoints
+## Ejecución local
+
+Para instalar Docker utilizar la siguiente [guia](https://docs.docker.com/get-docker/).
+
+### 1. Descargar Proyecto
+
+* Ejectuar el siguiente comando:
+
+    `git clone https://github.com/aescobar-icc/magneto-api.git`
+
+### 2. Correr la solución utilizando Docker
+
+Correr los siguientes commandos en la carpeta raiz (donde se encuentra el archivo .sln):
+
+`docker-compose build`
+
+`docker-compose up`
+
+Debería poder realizar solicitudes a localhost:5106 para la api una vez que se completen estos comandos.
+
+### 3. Probar la api
 
 ### mutant
 * Metodo: POST (No idempotente)
