@@ -8,7 +8,7 @@ Para la solución se realizo una API en Azure: [MutantRecruiterApi](https://muta
 
 ## Ejecución local
 
-### 1 Instalar Docker
+### 1. Instalar Docker
 
 * Para instalar Docker utilizar la siguiente [guia](https://docs.docker.com/get-docker/).
 
