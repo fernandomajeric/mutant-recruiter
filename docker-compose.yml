@@ -1,0 +1,38 @@
+version: "3.4"
+services:
+  ml-mutant-recruiter:
+    image: ml-mutant-recruiter:0.0.1
+    build:
+      context: ./
+      dockerfile: src/MutantRecruiter.Api/Dockerfile
+    ports:
+      - "5106:80"
+    volumes:
+      - proyect_data:/data
+    networks:
+      - redis-net
+    depends_on:
+      - redis
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    links: 
+      - "redis"
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    command: ["redis-server", "--bind", "redis", "--port", "6379"]
+    networks:
+      - redis-net
+    volumes:
+      - redis_data:/data
+
+networks:
+  redis-net:
+
+volumes:
+  redis_data:
+    driver: local
+  proyect_data:
+    driver: local
