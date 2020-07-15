@@ -16,7 +16,7 @@ Para la solución se realizo una API en Azure: [MutantRecruiterApi](https://muta
 
 * Ejectuar el siguiente comando:
 
-    `git clone https://github.com/aescobar-icc/magneto-api.git`
+    `git clone https://github.com/fernandomajeric/mutant-recruiter.git`
 
 ### 3. Correr la solución utilizando Docker
 
